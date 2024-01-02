@@ -1,0 +1,120 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Laticínios"
+      },
+      {
+        "id": 2,
+        "name": "Bebidas"
+      },
+      {
+        "id": 3,
+        "name": "Carnes"
+      },
+      {
+        "id": 4,
+        "name": "Frutas"
+      },
+      {
+        "id": 5,
+        "name": "Legumes"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "name": "Leite Desnatado 1L",
+        "categoryId": 1,
+        "photo": "https://www.italac.com.br/wp-content/uploads/2023/03/leiteuht_desnatado_italac_g.png",
+        "price": 3.50,
+        "description": "Leite desnatado 1L Italac UHT"
+      },
+      {
+        "id": 2,
+        "name": "Queijo Mussarela 500g",
+        "categoryId": 1,
+        "photo": "https://mambodelivery.vtexassets.com/arquivos/ids/177673/queijo-mussarela-lanche-tirolez.jpg",
+        "price": 12.99,
+        "description": "Queijo mussarela 500g Tirolez"
+      },
+      {
+        "id": 3,
+        "name": "Cerveja Pilsen 350ml",
+        "categoryId": 2,
+        "photo": "https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/132-cerveja-skol-pilsen-lata-350ml.jpg",
+        "price": 2.99,
+        "description": "Cerveja pilsen 350ml Skol"
+      },
+      {
+        "id": 4,
+        "name": "Cerveja IPA 600ml",
+        "categoryId": 2,
+        "photo": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/88040-cerveja-colorado-indica-600ml.20230419144826.jpg",
+        "price": 9.99,
+        "description": "Cerveja IPA 600ml Colorado"
+      },
+      {
+        "id": 5,
+        "name": "Picanha 1kg",
+        "categoryId": 3,
+        "photo": "https://www.sondadelivery.com.br/img.aspx/sku/1000036651/530/44154.png",
+        "price": 49.99,
+        "description": "Picanha 1kg Friboi"
+      },
+      {
+        "id": 6,
+        "name": "Maçã Fuji 1kg",
+        "categoryId": 4,
+        "photo": "https://superangeloni.vtexassets.com/arquivos/ids/182199/158070_1_zoom.jpg",
+        "price": 5.99,
+        "description": "Maçã fuji 1kg"
+      },
+      {
+        "id": 7,
+        "name": "Cenoura 1kg",
+        "categoryId": 5,
+        "photo": "https://ibassets.com.br/ib.item.image.big/b-d5de058c7a7d492f9d36f64f01b8ee17.jpg",
+        "price": 2.99,
+        "description": "Cenoura 1kg"
+      },
+      {
+        "id": 8,
+        "name": "Leite Integral 1L",
+        "categoryId": 1,
+        "photo": "https://www.drogariaminasbrasil.com.br/media/product/9e2/leite-uht-integral-piracanjuba-1l-com-tampa-3cb.jpg",
+        "price": 3.50,
+        "description": "Leite integral 1L Piracanjuba UHT"
+      },
+      {
+        "id": 9,
+        "name": "Refrigerante Guaraná 2L",
+        "categoryId": 2,
+        "photo": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/1885-refrigerante-guarana-antarctica-2l.jpg",
+        "price": 5.99,
+        "description": "Refrigerante guaraná 2L Antarctica"
+      },
+      {
+        "id": 10,
+        "name": "Coxão Mole 1kg",
+        "categoryId": 3,
+        "photo": "https://www.friboionline.com.br/ccstore/v1/images/?source=/file/v2667656650155778103/products/364.png&height=300&width=300",
+        "price": 39.99,
+        "description": "Coxão mole 1kg Swift"
+      },
+      {
+        "id": 11,
+        "name": "Manga Tommy 1kg",
+        "categoryId": 4,
+        "photo": "https://carrefourbrfood.vtexassets.com/arquivos/ids/12352403/manga-tommy-fresca-carrefour-1-kg-1.jpg",
+        "price": 6.99,
+        "description": "Manga tommy 1kg"
+      },
+      {
+        "id": 12,
+        "name": "Batata Doce 1kg",
+        "categoryId": 5,
+        "photo": "https://s3.amazonaws.com/produtos.vipcommerce.com.br/250x250/2e17ce31-212d-4059-b402-5a64fe3efdf7.jpg",
+        "price": 3.99
+      } 
+    ]}
