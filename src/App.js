@@ -3,6 +3,7 @@ import "./App.css";
 import CategoriesContainer from "./components/Categories/CategoriesContainer";
 import NavBar from "./components/NavBar/NavBar";
 import Cart from "./components/Cart/Cart";
+import Footer from "./components/Footer";
 function App() {
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
       />
+      <Footer />
     </div>
   );
 }
