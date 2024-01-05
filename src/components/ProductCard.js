@@ -3,47 +3,57 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Text,
   StackDivider,
   Heading,
   Stack,
   Box,
+  Image,
+  Button,
+  useToast,
 } from "@chakra-ui/react";
-// import { Container } from './styles';
+import { CartPlus } from "react-bootstrap-icons";
+import { formatToCurrency } from "../utils/formatToCurrenct";
 
-function ProductCard() {
+function ProductCard({ product, handleAddProduct }) {
+  const { name, photo, price, description } = product || {};
+  const toast = useToast();
+
+  const handleAdd = () => {
+    handleAddProduct(product);
+    toast({
+      title: "Carrinho atualizado!",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+      position: "bottom-right",
+    });
+  };
   return (
     <Card width="xs">
-      <CardHeader>
-        <Heading size="md">Client Report</Heading>
+      <CardHeader paddingBottom={0}>
+        <Image src={photo} draggable={false} height={"200px"} margin="auto" />
+        <Heading size="md">{name}</Heading>
       </CardHeader>
 
-      <CardBody>
-        <Stack divider={<StackDivider />} spacing="4">
-          <Box>
-            <Heading size="xs" textTransform="uppercase">
-              Summary
-            </Heading>
-            <Text pt="2" fontSize="sm">
-              View a summary of all your clients over the last month.
+      <CardBody paddingTop={0}>
+        <Stack divider={<StackDivider />}>
+          <Text pt="2" fontSize="sm">
+            {description}
+          </Text>
+          <Box
+            display="flex"
+            flexDir="row"
+            justifyContent="center"
+            alignItems="baseline"
+            gap={5}
+          >
+            <Text pt="2" fontSize="lg">
+              {formatToCurrency(price)}
             </Text>
-          </Box>
-          <Box>
-            <Heading size="xs" textTransform="uppercase">
-              Overview
-            </Heading>
-            <Text pt="2" fontSize="sm">
-              Check out the overview of your clients.
-            </Text>
-          </Box>
-          <Box>
-            <Heading size="xs" textTransform="uppercase">
-              Analysis
-            </Heading>
-            <Text pt="2" fontSize="sm">
-              See a detailed analysis of all your business clients.
-            </Text>
+            <Button onClick={handleAdd}>
+              Adicionar <CartPlus style={{ marginLeft: 5 }} />
+            </Button>
           </Box>
         </Stack>
       </CardBody>
