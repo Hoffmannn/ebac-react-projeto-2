@@ -47,9 +47,19 @@ function Category({ category, handleAddProduct }) {
       paddingRight={30}
       key={category.id}
     >
-      <Text textAlign="left" fontSize={25}>
-        {category.name}
-      </Text>
+      <Box
+        alignItems="baseline"
+        display="flex"
+        justifyContent="space-between"
+        mb={5}
+      >
+        <Text textAlign="left" fontSize={25}>
+          {category.name}
+        </Text>
+        <Text textAlign="right" fontSize={20} cursor="pointer">
+          Ver mais
+        </Text>
+      </Box>
       <Carousel responsive={responsive} infinite centerMode>
         {products.map((product) => (
           <ProductCard
