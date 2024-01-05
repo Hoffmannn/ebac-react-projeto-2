@@ -42,10 +42,11 @@ function Category({ category, handleAddProduct }) {
   return (
     <Box
       w="100%"
-      marginTop={10}
+      marginTop={2}
       paddingLeft={30}
       paddingRight={30}
       key={category.id}
+      paddingBottom={5}
     >
       <Box
         alignItems="baseline"
