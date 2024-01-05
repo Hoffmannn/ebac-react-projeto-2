@@ -30,7 +30,7 @@ function ProductCard({ product, handleAddProduct }) {
     });
   };
   return (
-    <Card width="xs">
+    <Card width="xs" height="100%">
       <CardHeader paddingBottom={0}>
         <Image src={photo} draggable={false} height={"200px"} margin="auto" />
         <Heading size="md">{name}</Heading>
